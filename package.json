@@ -1,19 +1,32 @@
-{
-  "name": "settings-form",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.2",
-    "vite": "^5.4.10"
-  }
+﻿{
+    "name":  "settings-form",
+    "private":  true,
+    "version":  "1.0.0",
+    "type":  "module",
+    "scripts":  {
+                    "preview":  "vite preview --host 0.0.0.0",
+                    "build":  "vite build",
+                    "dev":  "vite --host 0.0.0.0",
+                    "test":  "vitest run"
+                },
+    "dependencies":  {
+                         "@hookform/resolvers":  "^5.7.1",
+                         "react":  "^18.3.1",
+                         "react-dom":  "^18.3.1",
+                         "react-hook-form":  "^7.85.0",
+                         "zod":  "^4.4.3"
+                     },
+    "devDependencies":  {
+                            "@testing-library/jest-dom":  "^7.0.1",
+                            "@testing-library/react":  "^16.3.2",
+                            "@testing-library/user-event":  "^14.6.4",
+                            "@vitejs/plugin-react":  "^4.3.2",
+                            "jsdom":  "^30.0.1",
+                            "vite":  "^5.4.10",
+                            "vitest":  "^4.1.10"
+                        },
+    "vitest":  {
+                   "globals":  true,
+                   "environment":  "jsdom"
+               }
 }
