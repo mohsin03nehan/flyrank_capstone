@@ -25,3 +25,9 @@ This file describes the stack, structure, and conventions for this project so Cl
 - Always follow the commit message format above
 - Ask before making large structural changes to the project
 - Keep the README up to date as the project evolves
+
+## Rules learned from FE-03 drill
+
+1. Settings/profile forms use react-hook-form + zod for validation, never plain useState with manual checks.
+2. Test environment is Vitest (not Jest) — requires vitest.config.js with jsdom before writing tests.
+3. Vague prompts cause scope creep — Copilot fills unstated gaps with its own assumptions (e.g. added notification toggles and appearance controls that were never requested). Always specify exact fields and constraints upfront.
