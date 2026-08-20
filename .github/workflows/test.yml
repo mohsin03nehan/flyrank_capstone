@@ -1,4 +1,4 @@
-name: Test
+﻿name: Test
 
 on:
   push:
@@ -18,9 +18,8 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
-          cache-dependency-path: resume-tailor/package-lock.json
 
       - name: Install dependencies
         run: npm install
@@ -28,5 +27,3 @@ jobs:
       - name: Run unit tests
         run: npm run test
 
-      # E2E tests call the live AI route and require GOOGLE_GENERATIVE_AI_API_KEY,
-      # so they are run locally rather than in CI.
