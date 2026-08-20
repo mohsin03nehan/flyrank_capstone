@@ -27,3 +27,5 @@ jobs:
       - name: Run unit tests
         run: npm run test
 
+      # E2E tests call the live AI route and require GOOGLE_GENERATIVE_AI_API_KEY,
+      # so they are run locally rather than in CI.
